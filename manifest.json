@@ -1,0 +1,20 @@
+{
+	"manifest_version":2,
+	"name":"Block",
+	"version":"1.0",
+	"background":{
+		"scripts":["background.js"]
+	},
+	"content_scripts":[
+	{	
+		"matches":["https://*.facebook.com/*","http://*.facebook.com/*"],
+		"js":["jquery.min.js", "content.js"]
+	}
+
+	],
+	"browser_action":{
+
+	},
+	"web_accessible_resources": ["popup.html","bootstrap.min.css"]
+
+}
